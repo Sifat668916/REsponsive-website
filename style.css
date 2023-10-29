@@ -12,8 +12,18 @@
     padding: 20px;
     background-color: gray;
     display: flex;
+    /* margin: 0 auto; */
     justify-content: center;
 
+}
+.logo-section{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+    margin-right: 50px;
 }
 .menu-list{
     display: flex;
@@ -21,30 +31,90 @@
     /* flex-direction: column; */
     list-style-type: none;
 }
+.list{
+    padding-left: 50px;
+}
 .menu-list li a{
     padding: 20px;
     width: 100%;
     color: black;
     text-decoration: none;
 }
+.container2{
+    width: 300px;
+    height: 100%;
+    cursor: pointer;
+    /* margin: 0 auto; */
+    background: lightcyan;
+    border-radius: 10px;
+    box-shadow: rgba(59, 54, 54, 0.35) 0px 5px 15px;
+}
+.maincard{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+.hondacbr{
+    width: 300px;
+    height: 213.33px;
+    border-radius: 10px;
+    background-color: white;
+    /* border-color: red; */
+}
+
+.card h2{
+    padding-left: 10px;
+    margin-bottom: 5px;
+   
+}
+.card p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
 
 /* responsive section */
 @media only screen and (max-width: 600px) and (min-width: 300px){
     .menu{
         background-color: darkred;
+        display: grid;
+        font-display: column;
+        padding-right: 50px;
+    }
+    .menu-list li{
+        margin: 10px 0;
+
     }
     .menu-list{
         padding: 20px;
         display: flex;
-        gap: 10px;
+        /* gap: 10px; */
         flex-direction: column;
         list-style-type: none;
     }
+    .list{
+        padding-left: 0px;
+    }
     .menu-list li a{
-        /* margin-top: 10px; */
-        /* padding: 25px 0 20px 0; */
         width: 100%;
         color: white;
         text-decoration: none;
     }
+    .container2{
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+        background: darkred;
+        box-shadow: rgb(234, 15, 15) 0px 5px 15px;
+    }
+    .maincard{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 50px;
+        flex-direction: column;
+        color: white;
+    }
+
 }
